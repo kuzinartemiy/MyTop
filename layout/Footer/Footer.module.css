@@ -1,0 +1,41 @@
+.footer {
+	display: grid;
+  color: #FFF;
+
+	padding: 24px 32px;
+  gap: 5px 40px;
+
+  font-size: 16px;
+  line-height: 20px;
+
+	background-color: var(--primary);
+	grid-template-columns: 1fr auto auto;
+}
+
+.copyrights {
+	margin: 0;
+	text-align: left;
+}
+
+.link {
+	transition: 0.2s;
+	justify-self: end;
+}
+
+.link:hover {
+	opacity: 80%;
+}
+
+@media (max-width: 960px) {
+	.footer {
+		grid-template-columns: 1fr;
+	}
+
+	.copyrights {
+		text-align: center;
+	}
+
+	.link {
+		justify-self: center;
+	}
+}
